@@ -1,0 +1,10 @@
+C:\Users\35989\Desktop\Sirma Internship Task\NIkolay-Staykov-employees\Employees\bin\Release\Employees.exe.config
+C:\Users\35989\Desktop\Sirma Internship Task\NIkolay-Staykov-employees\Employees\bin\Release\Employees.exe
+C:\Users\35989\Desktop\Sirma Internship Task\NIkolay-Staykov-employees\Employees\bin\Release\Employees.pdb
+C:\Users\35989\Desktop\Sirma Internship Task\NIkolay-Staykov-employees\Employees\obj\Release\Employees.csprojAssemblyReference.cache
+C:\Users\35989\Desktop\Sirma Internship Task\NIkolay-Staykov-employees\Employees\obj\Release\Employees.Form1.resources
+C:\Users\35989\Desktop\Sirma Internship Task\NIkolay-Staykov-employees\Employees\obj\Release\Employees.Properties.Resources.resources
+C:\Users\35989\Desktop\Sirma Internship Task\NIkolay-Staykov-employees\Employees\obj\Release\Employees.csproj.GenerateResource.cache
+C:\Users\35989\Desktop\Sirma Internship Task\NIkolay-Staykov-employees\Employees\obj\Release\Employees.csproj.CoreCompileInputs.cache
+C:\Users\35989\Desktop\Sirma Internship Task\NIkolay-Staykov-employees\Employees\obj\Release\Employees.exe
+C:\Users\35989\Desktop\Sirma Internship Task\NIkolay-Staykov-employees\Employees\obj\Release\Employees.pdb
