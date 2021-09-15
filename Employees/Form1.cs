@@ -83,17 +83,16 @@ namespace Employees
             TimeSpan Current = new TimeSpan();
             int EmployeeID1 = 0;
             int EmployeeID2 = 0;
-            int ProjectID = 0;
             for(int i = 0;i < this._sharedProjectTimes.Count;i++)
             {
                 Current = this._sharedProjectTimes[i].GetSharedTime();
                 for(int i2 = i + 1;i2 < this._sharedProjectTimes.Count;i2++)
                 {
-                    if(this._sharedProjectTimes[i].GetEmployeeID1() == this._sharedProjectTimes[i2].GetEmployeeID1() && this._sharedProjectTimes[i].GetEmployeeID2() == this._sharedProjectTimes[i2].GetEmployeeID2() && this._sharedProjectTimes[i].GetProjectID() == this._sharedProjectTimes[i2].GetProjectID())
+                    if(this._sharedProjectTimes[i].GetEmployeeID1() == this._sharedProjectTimes[i2].GetEmployeeID1() && this._sharedProjectTimes[i].GetEmployeeID2() == this._sharedProjectTimes[i2].GetEmployeeID2())
                     {
                         Current = Current.Add(this._sharedProjectTimes[i2].GetSharedTime());
                     }
-                    else if(this._sharedProjectTimes[i].GetEmployeeID1() == this._sharedProjectTimes[i2].GetEmployeeID2() && this._sharedProjectTimes[i].GetEmployeeID2() == this._sharedProjectTimes[i2].GetEmployeeID1() && this._sharedProjectTimes[i].GetProjectID() == this._sharedProjectTimes[i2].GetProjectID())
+                    else if(this._sharedProjectTimes[i].GetEmployeeID1() == this._sharedProjectTimes[i2].GetEmployeeID2() && this._sharedProjectTimes[i].GetEmployeeID2() == this._sharedProjectTimes[i2].GetEmployeeID1())
                     {
                         Current = Current.Add(this._sharedProjectTimes[i2].GetSharedTime());
                     }
@@ -102,11 +101,10 @@ namespace Employees
                 {
                     EmployeeID1 = this._sharedProjectTimes[i].GetEmployeeID1();
                     EmployeeID2 = this._sharedProjectTimes[i].GetEmployeeID2();
-                    ProjectID = this._sharedProjectTimes[i].GetProjectID();
                     Longest = Current;
                 }
             }
-            ResultListBox.Items.Add($"Employee {EmployeeID1.ToString()} and employee {EmployeeID2.ToString()} have spent {Longest.TotalDays.ToString()} days working on project {ProjectID.ToString()}");
+            ResultListBox.Items.Add($"Employee {EmployeeID1.ToString()} and employee {EmployeeID2.ToString()} have spent {Longest.TotalDays.ToString()} days working on common projects");
         }
     }
 }
